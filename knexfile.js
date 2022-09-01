@@ -10,11 +10,18 @@ module.exports = {
   development: {
     client: 'postgresql',
    
-    connection: DATABASE_URL,
-
+   // connection: DATABASE_URL,
+connection:"postgres://ipquksnv:rMN8pElD025eXYYXGq54IoAwJXKVV0c1@jelani.db.elephantsql.com/ipquksnv",
     migrations: {
        directory: path.join(__dirname, "src", "db", "migrations"),
       },
+
+      seeds: {
+            directory: path.join(__dirname, "src", "db", "seeds"),
+          },
+
+
+
 
     },
 
